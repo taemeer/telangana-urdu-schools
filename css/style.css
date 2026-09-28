@@ -66,6 +66,6 @@ tbody tr:hover td.sno {
   background: #f8fbfa;
 }
 /* Noto Nastaliq Urdu for the Urdu-English version only */
-html[lang="ur"] main.app div.filter-card{
+html[lang="ur"] main.app {
   direction:rtl;text-align:right;font-family:'Noto Nastaliq Urdu','Noto Naskh Arabic',serif;font-size:1.03rem;line-height:2
 }
