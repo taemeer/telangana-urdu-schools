@@ -75,3 +75,18 @@ html[lang="ur"] .actions button,
 html[lang="ur"] .actions .selection-count {
   font-family:'Noto Nastaliq Urdu','Noto Naskh Arabic',serif;font-size:1.03rem;line-height:2
 }
+/* LTR table and horizontal scrolling */
+.result-box {
+  direction: ltr !important;
+}
+
+.result-box table {
+  direction: ltr !important;
+  text-align: left;
+}
+
+/* RTL only for Urdu text cells */
+.result-box .urdu {
+  direction: rtl !important;
+  text-align: right !important;
+}
