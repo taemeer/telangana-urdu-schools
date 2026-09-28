@@ -1,6 +1,7 @@
     :root{--green:#0f5d4e;--green2:#e9f5f1;--ink:#17212b;--muted:#5f6b76;--line:#d5dee3;--paper:#fff;--page:#f2f5f4;--warn:#9a3412}
     *{box-sizing:border-box}
     body{margin:0;background:var(--page);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.45}
+    #pageTitle .intro .controls{font-family:'Noto Nastaliq Urdu', serif !important;}
     .app{width:min(1180px,calc(100% - 24px));margin:24px auto;padding:24px;background:var(--paper);border:1px solid var(--line);border-radius:12px;box-shadow:0 8px 26px rgba(15,40,34,.07)}
     h1{margin:0 0 8px;font-size:clamp(1.45rem,3vw,2rem);line-height:1.25}
     .intro{margin:0 0 22px;color:var(--muted)}
