@@ -42,3 +42,26 @@
       .result-box{height:62vh;min-height:430px}
       .selection-count{width:100%;margin-left:0}
     }
+/* Keep the S.No. column visible during horizontal scrolling */
+thead th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 7;
+  min-width: 64px;
+  background: #174f43;
+  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.14);
+}
+
+tbody td.sno {
+  position: sticky;
+  left: 0;
+  z-index: 3;
+  min-width: 64px;
+  background: #ffffff;
+  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.10);
+}
+
+/* Maintain the hover effect on the fixed cell */
+tbody tr:hover td.sno {
+  background: #f8fbfa;
+}
