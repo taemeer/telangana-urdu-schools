@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Telangana Urdu Medium Schools Directory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app">
+    <h1 id="pageTitle"></h1>
+    <p class="intro" id="pageIntro"></p>
+
+    <section class="controls" aria-label="School filters">
+      <div class="filter-card">
+        <h2 id="districtHeading"></h2>
+        <p class="hint" id="districtHint"></p>
+        <label for="districtSelect" id="districtLabel"></label>
+        <select id="districtSelect" multiple size="10" aria-describedby="districtHint"></select>
+        <div class="actions">
+          <button type="button" id="filterButton"></button>
+          <button type="button" class="secondary" id="clearButton"></button>
+          <span class="selection-count" id="selectionCount"></span>
+        </div>
+      </div>
+
+      <div class="filter-card">
+        <h2 id="comparisonHeading"></h2>
+        <p class="hint" id="comparisonHint"></p>
+        <label for="comparisonSelect" id="comparisonLabel"></label>
+        <select id="comparisonSelect">
+          <option value="GOVT">Government Schools</option>
+          <option value="ZP">Zilla Parishad Schools</option>
+          <option value="GIRLS">Girls Schools</option>
+        </select>
+        <div class="actions">
+          <button type="button" id="compareButton"></button>
+        </div>
+      </div>
+    </section>
+
+    <p class="message" id="message" aria-live="polite"></p>
+    <section class="result-box" id="resultBox" aria-live="polite">
+      <div class="empty" id="emptyState"></div>
+    </section>
+  </main>
+
+  <script src="data/schools.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
