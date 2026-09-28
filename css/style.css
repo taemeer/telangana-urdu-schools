@@ -35,14 +35,12 @@
     .head-ur{display:block;direction:rtl;text-align:right;font-family:'Noto Nastaliq Urdu','Noto Naskh Arabic',serif;font-size:1rem;line-height:1.7}
     .head-en{display:block;font-size:.78rem;font-weight:400;opacity:.9}
     .nowrap{white-space:nowrap}
-    .app{font-family:'Noto Nastaliq Urdu', serif !important;}
     @media(max-width:760px){
       .app{width:100%;margin:0;padding:16px 12px;border:0;border-radius:0;box-shadow:none}
       .controls{grid-template-columns:1fr}
       .filter-card{padding:15px}
       .result-box{height:62vh;min-height:430px}
       .selection-count{width:100%;margin-left:0}
-    .app{font-family:'Noto Nastaliq Urdu', serif !important;}
     }
 /* Keep the S.No. column visible during horizontal scrolling */
 thead th:first-child {
@@ -66,4 +64,8 @@ tbody td.sno {
 /* Maintain the hover effect on the fixed cell */
 tbody tr:hover td.sno {
   background: #f8fbfa;
+}
+/* Noto Nastaliq Urdu for the Urdu-English version only */
+html[lang="ur"] main.app {
+  font-family:font-family:'Noto Nastaliq Urdu','Noto Naskh Arabic',serif;font-size:1.03rem;line-height:2
 }
