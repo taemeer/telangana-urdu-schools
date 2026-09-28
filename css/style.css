@@ -69,3 +69,9 @@ tbody tr:hover td.sno {
 html[lang="ur"] main.app {
   direction:rtl;text-align:right;font-family:'Noto Nastaliq Urdu','Noto Naskh Arabic',serif;font-size:1.03rem;line-height:2
 }
+/* Urdu font for Filter, Clear and Compare controls */
+html[lang="ur"] .actions,
+html[lang="ur"] .actions button,
+html[lang="ur"] .actions .selection-count {
+  font-family:'Noto Nastaliq Urdu','Noto Naskh Arabic',serif;font-size:1.03rem;line-height:2
+}
